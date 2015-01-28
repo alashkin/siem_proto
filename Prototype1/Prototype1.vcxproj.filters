@@ -1,0 +1,342 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="pugixml">
+      <UniqueIdentifier>{c3d14976-1480-44cc-9529-f66e82928e16}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Generated">
+      <UniqueIdentifier>{3da592ce-7c7d-4733-96dc-282b54c13aa2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Utilities">
+      <UniqueIdentifier>{ebcdd834-6aba-4076-8702-441572d9c750}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Unused">
+      <UniqueIdentifier>{0a8489f3-8ae2-416d-b5f1-1256063bcda6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Events">
+      <UniqueIdentifier>{a541d043-63cc-4ca5-9427-b046cfef17f6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Changes">
+      <UniqueIdentifier>{6c0363eb-f7c9-4fc9-b35b-aa30333fdc49}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Changes\Events Base">
+      <UniqueIdentifier>{1f9b0b37-48cb-4407-8b4f-e34e1d4992f7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Start">
+      <UniqueIdentifier>{91e52ac4-1b8f-4388-b866-8b315e0b8b82}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Changes\Events Generic">
+      <UniqueIdentifier>{d643c885-1806-4023-9d25-034070a20638}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Changes\Event 1102, 5139, 5141">
+      <UniqueIdentifier>{5b4f685f-857d-465f-97e9-044644d41fd3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Changes\Events 5136, 5137, 5138">
+      <UniqueIdentifier>{d5c7f1e5-5df8-4354-a77e-9ebedf55b183}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Changes\Event Parsers">
+      <UniqueIdentifier>{f525aec1-676c-415c-a5a8-a4300e579c99}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Changes\Depended">
+      <UniqueIdentifier>{bd19c9e1-9146-478d-8e8c-6b7ff8944e6e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Changes\Disp">
+      <UniqueIdentifier>{bb81d5b7-8d98-4325-af9f-a3f8bf485fa2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="AD">
+      <UniqueIdentifier>{7638a4ac-a95c-4b04-b45a-acb9528f6953}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Changes\Attributes">
+      <UniqueIdentifier>{4056036c-b4ef-487c-b019-dc4c6dc0acd1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="SIEM">
+      <UniqueIdentifier>{9198dc84-0126-4f49-b9cc-3c1d256f518a}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="EventCollector1.h">
+      <Filter>Events</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Libraries\pugixml\CurrentVersion\src\pugiconfig.hpp">
+      <Filter>pugixml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Libraries\pugixml\CurrentVersion\src\pugixml.hpp">
+      <Filter>pugixml</Filter>
+    </ClInclude>
+    <ClInclude Include="BkmConfig.h">
+      <Filter>Events</Filter>
+    </ClInclude>
+    <ClInclude Include="XMLQueryGen.h">
+      <Filter>Events</Filter>
+    </ClInclude>
+    <ClInclude Include="EvtConvert.h">
+      <Filter>Events</Filter>
+    </ClInclude>
+    <ClInclude Include="XMLQueryGenBase.h">
+      <Filter>Events</Filter>
+    </ClInclude>
+    <ClInclude Include="XMLQueryFromFile.h">
+      <Filter>Events</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Generated</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Generated</Filter>
+    </ClInclude>
+    <ClInclude Include="CmdLine.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="JSONConfig.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="Log.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="macroses.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="unicode.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="utils.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="Config.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="ChangeUtils.h">
+      <Filter>Changes</Filter>
+    </ClInclude>
+    <ClInclude Include="static_containers.h">
+      <Filter>Unused</Filter>
+    </ClInclude>
+    <ClInclude Include="ChangesBase.h">
+      <Filter>Unused</Filter>
+    </ClInclude>
+    <ClInclude Include="EventProcessor1.h">
+      <Filter>Unused</Filter>
+    </ClInclude>
+    <ClInclude Include="EvtHandle.h">
+      <Filter>Utilities</Filter>
+    </ClInclude>
+    <ClInclude Include="EvtCollDisp.h">
+      <Filter>Unused</Filter>
+    </ClInclude>
+    <ClInclude Include="FileTimeUtils.h">
+      <Filter>Unused</Filter>
+    </ClInclude>
+    <ClInclude Include="EventUtils.h">
+      <Filter>Events</Filter>
+    </ClInclude>
+    <ClInclude Include="EDBasedObjectChange2.h">
+      <Filter>Changes\Events 5136, 5137, 5138</Filter>
+    </ClInclude>
+    <ClInclude Include="EventProcessor2.h">
+      <Filter>Changes\Events 5136, 5137, 5138</Filter>
+    </ClInclude>
+    <ClInclude Include="EventProcessorBase.h">
+      <Filter>Changes\Events Base</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratorIntf.h">
+      <Filter>Changes\Events Base</Filter>
+    </ClInclude>
+    <ClInclude Include="ChangeBase.h">
+      <Filter>Changes\Events Base</Filter>
+    </ClInclude>
+    <ClInclude Include="ComplexChangeBase.h">
+      <Filter>Changes\Events Base</Filter>
+    </ClInclude>
+    <ClInclude Include="GenericSimpleProcessor.h">
+      <Filter>Changes\Events Generic</Filter>
+    </ClInclude>
+    <ClInclude Include="ClearEventLogProcessor.h">
+      <Filter>Changes\Event 1102, 5139, 5141</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjectMovedProcessor.h">
+      <Filter>Changes\Event 1102, 5139, 5141</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjectDeletedProcessor.h">
+      <Filter>Changes\Event 1102, 5139, 5141</Filter>
+    </ClInclude>
+    <ClInclude Include="EventWithFlatEventDataParser.h">
+      <Filter>Changes\Event Parsers</Filter>
+    </ClInclude>
+    <ClInclude Include="ClearEventLogEventParser.h">
+      <Filter>Changes\Event Parsers</Filter>
+    </ClInclude>
+    <ClInclude Include="DependedLogic.h">
+      <Filter>Changes\Depended</Filter>
+    </ClInclude>
+    <ClInclude Include="DependedLogicDefines.h">
+      <Filter>Changes\Depended</Filter>
+    </ClInclude>
+    <ClInclude Include="SimpleChange.h">
+      <Filter>Changes\Events Generic</Filter>
+    </ClInclude>
+    <ClInclude Include="ChangeGenerator1.h">
+      <Filter>Changes\Disp</Filter>
+    </ClInclude>
+    <ClInclude Include="Dispatcher1.h">
+      <Filter>Changes\Disp</Filter>
+    </ClInclude>
+    <ClInclude Include="EventProcessorSelector.h">
+      <Filter>Changes\Disp</Filter>
+    </ClInclude>
+    <ClInclude Include="ad_utils.h">
+      <Filter>AD</Filter>
+    </ClInclude>
+    <ClInclude Include="AttributeValuesParser.h">
+      <Filter>Changes\Attributes</Filter>
+    </ClInclude>
+    <ClInclude Include="GroupTypeParser.h">
+      <Filter>Changes\Attributes</Filter>
+    </ClInclude>
+    <ClInclude Include="UACParser.h">
+      <Filter>Changes\Attributes</Filter>
+    </ClInclude>
+    <ClInclude Include="AttrParserUtils.h">
+      <Filter>Changes\Attributes</Filter>
+    </ClInclude>
+    <ClInclude Include="AttributeValueParserBase.h">
+      <Filter>Changes\Attributes</Filter>
+    </ClInclude>
+    <ClInclude Include="SIEMWriter.h">
+      <Filter>SIEM</Filter>
+    </ClInclude>
+    <ClInclude Include="DefaultAttributeParser.h">
+      <Filter>Changes\Attributes</Filter>
+    </ClInclude>
+    <ClInclude Include="ADSchemaReader.h">
+      <Filter>AD</Filter>
+    </ClInclude>
+    <ClInclude Include="ADSchema.h">
+      <Filter>AD</Filter>
+    </ClInclude>
+    <ClInclude Include="ADSchemaSerializer.h">
+      <Filter>AD</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="EventCollector1.cpp">
+      <Filter>Events</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Libraries\pugixml\CurrentVersion\src\pugixml.cpp">
+      <Filter>pugixml</Filter>
+    </ClCompile>
+    <ClCompile Include="BkmConfig.cpp">
+      <Filter>Events</Filter>
+    </ClCompile>
+    <ClCompile Include="XMLQueryGen.cpp">
+      <Filter>Events</Filter>
+    </ClCompile>
+    <ClCompile Include="EvtConvert.cpp">
+      <Filter>Events</Filter>
+    </ClCompile>
+    <ClCompile Include="XMLQueryFromFile.cpp">
+      <Filter>Events</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Generated</Filter>
+    </ClCompile>
+    <ClCompile Include="Prototype1.cpp">
+      <Filter>Start</Filter>
+    </ClCompile>
+    <ClCompile Include="CmdLine.cpp">
+      <Filter>Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="JSONConfig.cpp">
+      <Filter>Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="Log.cpp">
+      <Filter>Utilities</Filter>
+    </ClCompile>
+    <ClCompile Include="EventProcessor1.cpp">
+      <Filter>Unused</Filter>
+    </ClCompile>
+    <ClCompile Include="ChangeUtils.cpp">
+      <Filter>Changes</Filter>
+    </ClCompile>
+    <ClCompile Include="EvtCollDisp.cpp">
+      <Filter>Unused</Filter>
+    </ClCompile>
+    <ClCompile Include="EventUtils.cpp">
+      <Filter>Events</Filter>
+    </ClCompile>
+    <ClCompile Include="EDBasedObjectChange2.cpp">
+      <Filter>Changes\Events 5136, 5137, 5138</Filter>
+    </ClCompile>
+    <ClCompile Include="EventProcessor2.cpp">
+      <Filter>Changes\Events 5136, 5137, 5138</Filter>
+    </ClCompile>
+    <ClCompile Include="EventProcessorBase.cpp">
+      <Filter>Changes\Events Base</Filter>
+    </ClCompile>
+    <ClCompile Include="ChangeBase.cpp">
+      <Filter>Changes\Events Base</Filter>
+    </ClCompile>
+    <ClCompile Include="ComplexChangeBase.cpp">
+      <Filter>Changes\Events Base</Filter>
+    </ClCompile>
+    <ClCompile Include="EventWithFlatEventDataParser.cpp">
+      <Filter>Changes\Event Parsers</Filter>
+    </ClCompile>
+    <ClCompile Include="DependedLogic.cpp">
+      <Filter>Changes\Depended</Filter>
+    </ClCompile>
+    <ClCompile Include="DependedLogicTable.cpp">
+      <Filter>Changes\Depended</Filter>
+    </ClCompile>
+    <ClCompile Include="ChangeGenerator1.cpp">
+      <Filter>Changes\Disp</Filter>
+    </ClCompile>
+    <ClCompile Include="Dispatcher1.cpp">
+      <Filter>Changes\Disp</Filter>
+    </ClCompile>
+    <ClCompile Include="EventProcessorSelector.cpp">
+      <Filter>Changes\Disp</Filter>
+    </ClCompile>
+    <ClCompile Include="ad_utils.cpp">
+      <Filter>AD</Filter>
+    </ClCompile>
+    <ClCompile Include="AttributeValuesParser.cpp">
+      <Filter>Changes\Attributes</Filter>
+    </ClCompile>
+    <ClCompile Include="GroupTypeParser.cpp">
+      <Filter>Changes\Attributes</Filter>
+    </ClCompile>
+    <ClCompile Include="UACParser.cpp">
+      <Filter>Changes\Attributes</Filter>
+    </ClCompile>
+    <ClCompile Include="SIEMWriter.cpp">
+      <Filter>SIEM</Filter>
+    </ClCompile>
+    <ClCompile Include="DefaultAttributeParser.cpp">
+      <Filter>Changes\Attributes</Filter>
+    </ClCompile>
+    <ClCompile Include="ADSchemaReader.cpp">
+      <Filter>AD</Filter>
+    </ClCompile>
+    <ClCompile Include="ADSchema.cpp">
+      <Filter>AD</Filter>
+    </ClCompile>
+    <ClCompile Include="ADSchemaSerializer.cpp">
+      <Filter>AD</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\test.cfg" />
+    <None Include="etw_provider.man">
+      <Filter>SIEM</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt">
+      <Filter>Generated</Filter>
+    </Text>
+  </ItemGroup>
+</Project>

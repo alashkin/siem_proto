@@ -1,0 +1,224 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{429748AE-F83E-4384-BDD9-3F3402EB80F2}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Prototype1</RootNamespace>
+    <SccProjectName>SAK</SccProjectName>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>C:\Projects\Project1\Libraries\pugixml\CurrentVersion\src;C:\Projects\Project1\Libraries\json_spirit\CurrentVersion;C:\Projects\Project1\Libraries\boost\CurrentVersion;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Projects\Project1\Libraries\boost\CurrentVersion\stage\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>C:\Projects\Project1\Libraries\pugixml\CurrentVersion\src;C:\Projects\Project1\Libraries\json_spirit\CurrentVersion;C:\Projects\Project1\Libraries\boost\CurrentVersion;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Projects\Project1\Libraries\boost\CurrentVersion\stage\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;PUGIXML_WCHAR_MODE;_DEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions);_CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES=1</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>Wevtapi.lib;Activeds.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <Profile>true</Profile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;PUGIXML_WCHAR_MODE;NDEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions);_CRT_SECURE_CPP_OVERLOAD_STANDARD_NAMES=1</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>Wevtapi.lib;Activeds.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <Profile>true</Profile>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Libraries\pugixml\CurrentVersion\src\pugiconfig.hpp" />
+    <ClInclude Include="..\..\Libraries\pugixml\CurrentVersion\src\pugixml.hpp" />
+    <ClInclude Include="ADSchema.h" />
+    <ClInclude Include="ADSchemaReader.h" />
+    <ClInclude Include="ADSchemaSerializer.h" />
+    <ClInclude Include="ad_utils.h" />
+    <ClInclude Include="AttributeValuesParser.h" />
+    <ClInclude Include="AttrParserUtils.h" />
+    <ClInclude Include="BkmConfig.h" />
+    <ClInclude Include="ChangeBase.h" />
+    <ClInclude Include="ClearEventLogEventParser.h" />
+    <ClInclude Include="ComplexChangeBase.h" />
+    <ClInclude Include="DefaultAttributeParser.h" />
+    <ClInclude Include="DependedLogicDefines.h" />
+    <ClInclude Include="GroupTypeParser.h" />
+    <ClInclude Include="ObjectDeletedProcessor.h" />
+    <ClInclude Include="ObjectMovedProcessor.h" />
+    <ClInclude Include="ClearEventLogProcessor.h" />
+    <ClInclude Include="EventProcessorBase.h" />
+    <ClInclude Include="Dispatcher1.h" />
+    <ClInclude Include="EventProcessor2.h" />
+    <ClInclude Include="ChangeUtils.h" />
+    <ClInclude Include="CmdLine.h" />
+    <ClInclude Include="Config.h" />
+    <ClInclude Include="ChangeGenerator1.h" />
+    <ClInclude Include="EventProcessorSelector.h" />
+    <ClInclude Include="GeneratorIntf.h" />
+    <ClInclude Include="DependedLogic.h" />
+    <ClInclude Include="EDBasedObjectChange2.h" />
+    <ClInclude Include="EventCollector1.h" />
+    <ClInclude Include="ChangesBase.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="EventWithFlatEventDataParser.h" />
+    <ClInclude Include="EventProcessor1.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="EventUtils.h" />
+    <ClInclude Include="EvtCollDisp.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="EvtConvert.h" />
+    <ClInclude Include="EvtHandle.h" />
+    <ClInclude Include="FileTimeUtils.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="GenericSimpleProcessor.h" />
+    <ClInclude Include="JSONConfig.h" />
+    <ClInclude Include="Log.h" />
+    <ClInclude Include="macroses.h" />
+    <ClInclude Include="AttributeValueParserBase.h" />
+    <ClInclude Include="SIEMWriter.h" />
+    <ClInclude Include="SimpleChange.h" />
+    <ClInclude Include="static_containers.h">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClInclude>
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="UACParser.h" />
+    <ClInclude Include="unicode.h" />
+    <ClInclude Include="utils.h" />
+    <ClInclude Include="XMLQueryFromFile.h" />
+    <ClInclude Include="XMLQueryGen.h" />
+    <ClInclude Include="XMLQueryGenBase.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Libraries\pugixml\CurrentVersion\src\pugixml.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="ADSchema.cpp" />
+    <ClCompile Include="ADSchemaReader.cpp" />
+    <ClCompile Include="ADSchemaSerializer.cpp" />
+    <ClCompile Include="ad_utils.cpp" />
+    <ClCompile Include="AttributeValuesParser.cpp" />
+    <ClCompile Include="BkmConfig.cpp" />
+    <ClCompile Include="ChangeBase.cpp" />
+    <ClCompile Include="ComplexChangeBase.cpp" />
+    <ClCompile Include="DefaultAttributeParser.cpp" />
+    <ClCompile Include="DependedLogicTable.cpp" />
+    <ClCompile Include="Dispatcher1.cpp" />
+    <ClCompile Include="EventProcessor2.cpp" />
+    <ClCompile Include="ChangeUtils.cpp" />
+    <ClCompile Include="CmdLine.cpp" />
+    <ClCompile Include="ChangeGenerator1.cpp" />
+    <ClCompile Include="DependedLogic.cpp" />
+    <ClCompile Include="EDBasedObjectChange2.cpp" />
+    <ClCompile Include="EventCollector1.cpp" />
+    <ClCompile Include="EventWithFlatEventDataParser.cpp" />
+    <ClCompile Include="EventProcessor1.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="EventProcessorBase.cpp" />
+    <ClCompile Include="EventProcessorSelector.cpp" />
+    <ClCompile Include="EventUtils.cpp" />
+    <ClCompile Include="EvtCollDisp.cpp">
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</ExcludedFromBuild>
+      <ExcludedFromBuild Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">true</ExcludedFromBuild>
+    </ClCompile>
+    <ClCompile Include="EvtConvert.cpp" />
+    <ClCompile Include="GroupTypeParser.cpp" />
+    <ClCompile Include="JSONConfig.cpp" />
+    <ClCompile Include="Log.cpp" />
+    <ClCompile Include="Prototype1.cpp" />
+    <ClCompile Include="SIEMWriter.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="UACParser.cpp" />
+    <ClCompile Include="XMLQueryFromFile.cpp" />
+    <ClCompile Include="XMLQueryGen.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\test.cfg" />
+    <None Include="etw_provider.man">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

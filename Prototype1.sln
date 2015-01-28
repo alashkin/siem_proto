@@ -1,0 +1,45 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.21005.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Prototype1", "Prototype1\Prototype1.vcxproj", "{429748AE-F83E-4384-BDD9-3F3402EB80F2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{1A111417-2623-4955-AB34-D5602112CB88}"
+	ProjectSection(SolutionItems) = preProject
+		Performance1.psess = Performance1.psess
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Prototype1_etwres", "Prototype1_etwres\Prototype1_etwres.vcxproj", "{F2218652-4C86-4258-BF68-0E0690399ACA}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 3
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://kapaai.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = Prototype1\\Prototype1.vcxproj
+		SccProjectName1 = Prototype1
+		SccLocalPath1 = Prototype1
+		SccProjectUniqueName2 = Prototype1_etwres\\Prototype1_etwres.vcxproj
+		SccProjectName2 = Prototype1_etwres
+		SccLocalPath2 = Prototype1_etwres
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{429748AE-F83E-4384-BDD9-3F3402EB80F2}.Debug|Win32.ActiveCfg = Debug|Win32
+		{429748AE-F83E-4384-BDD9-3F3402EB80F2}.Debug|Win32.Build.0 = Debug|Win32
+		{429748AE-F83E-4384-BDD9-3F3402EB80F2}.Release|Win32.ActiveCfg = Release|Win32
+		{429748AE-F83E-4384-BDD9-3F3402EB80F2}.Release|Win32.Build.0 = Release|Win32
+		{F2218652-4C86-4258-BF68-0E0690399ACA}.Debug|Win32.ActiveCfg = Debug|Win32
+		{F2218652-4C86-4258-BF68-0E0690399ACA}.Debug|Win32.Build.0 = Debug|Win32
+		{F2218652-4C86-4258-BF68-0E0690399ACA}.Release|Win32.ActiveCfg = Release|Win32
+		{F2218652-4C86-4258-BF68-0E0690399ACA}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

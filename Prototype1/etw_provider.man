@@ -1,0 +1,123 @@
+<instrumentationManifest
+    xmlns="http://schemas.microsoft.com/win/2004/08/events" 
+    xmlns:win="http://manifests.microsoft.com/win/2004/08/windows/events"
+    xmlns:xs="http://www.w3.org/2001/XMLSchema"    
+    >
+
+    <instrumentation>
+        <events>
+
+            <provider name="Kapaai" 
+                guid="{394EF657-35CE-4942-85A3-006AD598AEDA}" 
+                symbol="KAPAAI_PROTOTYPE1" 
+                resourceFileName="C:\Projects\Project1\Prototype1\Debug\Prototype1_etwres.dll" 
+                messageFileName="C:\Projects\Project1\Prototype1\Debug\Prototype1_etwres.dll"
+                >
+
+              <channels>
+                    <channel chid="kac_1" 
+                                   name="Audit"
+                                   symbol="AUDIT"
+				                           type="Operational"
+                                   enabled="true"
+                                   isolation="Application"
+                                   />
+                </channels>
+
+                <keywords>
+                    <keyword name="Change" symbol="CHANGE" mask="0x1" />
+                </keywords>
+
+                <maps>
+                    <valueMap name="ChangeType">
+                        <map value="1" message="$(string.ChangeType.ObjectDeleted)"/>
+                        <map value="2" message="$(string.ChangeType.ObjectModified)"/>
+                        <map value="3" message="$(string.ChangeType.ObjectCreated)"/>
+                        <map value="4" message="$(string.ChangeType.ObjectMoved)"/> 
+                        <map value="5" message="$(string.ChangeType.ObjectUndeleted)"/>
+                        <map value="6" message="$(string.ChangeType.EventLogCleared)"/>
+                    </valueMap>
+                </maps>
+
+                <templates>
+
+                   <template tid="ObjectChange">
+                     <data name="ChangeType" inType="win:UInt16" map="ChangeType"/>
+
+                     <data name="WHO_DomainNetbios" inType="win:UnicodeString"/>
+                     <data name="WHO_DomainFQDN" inType="win:UnicodeString"/>
+                     <data name="WHO_Name" inType="win:UnicodeString"/>
+                     <data name="WHO_Sid" inType="win:UnicodeString"/>
+                     <data name="WHAT_DN" inType="win:UnicodeString"/>
+                     <data name="WHAT_Name" inType="win:UnicodeString"/>
+                     <data name="WHAT_Class" inType="win:UnicodeString"/>
+                     <data name="WHAT_Guid" inType="win:UnicodeString"/>
+                     <data name="WHEN" inType="win:UnicodeString"/>
+                     <data name="WHERE" inType="win:UnicodeString"/>
+
+                     <data name="ChangedAttributeCount" inType="win:UInt16" />
+                     <struct name="ChangedAttributes" count="ChangedAttributeCount" >
+                       <data name="Name" inType="win:UnicodeString" />
+                       <data name="OldValueCount" inType="win:UInt16"/>
+                       <data name="OldValue" inType="win:UnicodeString" count="OldValueCount"/>
+                       <data name="NewValueCount" inType="win:UInt16"/>
+                       <data name="NewValue" inType="win:UnicodeString" count="NewValueCount"/>
+                     </struct>
+                     
+                     <data name="HRT" inType="win:UnicodeString"/>
+                     
+                     <UserData>
+                        <EventData xmlns="http://manifests.kapaai.com/events/objectchange">
+                          <ChangeType>%1</ChangeType>
+                          <WHO_DomainNetbios>%2</WHO_DomainNetbios>
+                          <WHO_DomainFQDN>%3</WHO_DomainFQDN>
+                          <WHO_Name>%4</WHO_Name>
+                          <WHO_Sid>%5</WHO_Sid>
+                          <WHAT_DN>%6</WHAT_DN>
+                          <WHAT_Name>%7</WHAT_Name>
+                          <WHAT_Class>%8</WHAT_Class>
+                          <WHAT_Guid>%9</WHAT_Guid>
+                          <WHEN>%10</WHEN>
+                          <WHERE>%11</WHERE>
+                          <ChangedAttributeCount>%12</ChangedAttributeCount>
+                          <ChangedAttributes>%13</ChangedAttributes>
+                          <HRT>%14</HRT>
+                        </EventData>
+                     </UserData> 
+                    </template>
+
+                </templates>
+
+                <events>
+                    <event value="7001" 
+                        level="win:Informational"
+                        opcode="win:Info" 
+                        template="ObjectChange" 
+                        symbol="ObjectChangeEvent"
+                        message ="$(string.Event.ObjectChangeText)"
+                        keywords="Change"
+                        channel = "kac_1" 
+                        />
+                </events>
+            </provider>
+
+        </events>
+
+    </instrumentation>
+
+    <localization>
+        <resources culture="en-US">
+            <stringTable>
+                <string id="ChangeType.ObjectDeleted" value="Active Directory object was deleted"/>
+                <string id="ChangeType.ObjectModified" value="Active Directory object was modified"/>
+                <string id="ChangeType.ObjectCreated" value="Active Directory object was created"/>   
+                <string id="ChangeType.ObjectMoved" value="Active Directory object was moved"/> 
+                <string id="ChangeType.ObjectUndeleted" value="Active Directory object was undeleted"/>
+                <string id="ChangeType.EventLogCleared" value="Security log was cleared"/>
+
+                <string id="Event.ObjectChangeText" value="Change type: %1%n%n%tWHO(Domain netbios): %2%n%tWHO(Domain FQDN): %3%n%tWHO(Name): %4%n%tWHO(Sid): %5%n%tWHAT(DN): %6%n%tWHAT(Name): %7%n%tWHAT(class) :%8%n%tWHAT(guid): %9%n%tWHEN: %10%n%tWHERE: %11%n%14"/>
+            </stringTable>
+        </resources>
+    </localization>
+
+</instrumentationManifest>
